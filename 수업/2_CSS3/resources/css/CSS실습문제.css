@@ -1,0 +1,31 @@
+form{
+    background-color:pink;
+    padding:20px;
+    border-radius:30px;
+    width:350px;
+    height:450px;
+    font-family: 'Jua', sans-serif;
+}
+
+fieldset{
+    border:none;
+    background-color:rgb(253, 154, 171);
+}
+
+input[type="submit"]{
+    
+    border:none;
+    width:80px;
+    height:40px;
+    background-color:tomato;
+    border-radius:10px;
+    font-family: 'Jua', sans-serif;
+}
+
+input[type="submit"]:hover{
+    background-color:rgb(236, 66, 35);
+    cursor:pointer;
+    font-family: 'Jua', sans-serif;
+    color:white;
+}
+

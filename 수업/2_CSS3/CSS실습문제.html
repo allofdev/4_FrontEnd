@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS실습문제</title>
+    <link rel="stylesheet" href="resources/css/CSS실습문제.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="test.do">
+        <fieldset>
+            <legend>고객정보</legend>
+            <label for="name">고객명 : </label>
+            <input  type="text" id="name" name="username" placeholder="이름 입력" required maxlength="6">
+            <br>
+            <label for="phone">전화번호 : </label>
+            <input type="tel" id="phone" name="userphone" placeholder="-포함 입력" required>
+            <br>
+            <label for="email">E-mail : </label>
+            <input type="email" id="email" name="useremail" placeholder="이메일 입력" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>피자 사이즈</legend>
+            <input type="radio" id="small" name="pizzaSize" value="small" required>
+            <label for="small">Small</label>
+            <br>
+            <input type="radio" id="medium" name="pizzaSize" value="medium">
+            <label for="medium">Medium</label>
+            <br>
+            <input type="radio" id="large" name="pizzaSize" value="large">
+            <label for="large">Large</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>토핑 선택</legend>
+            <input type="checkbox" id="ba" name="toping" value="ba" required>
+            <label for="ba">베이컨</label>
+            <br>
+            <input type="checkbox" id="ch" name="toping" value="ch">
+            <label for="ch">치즈</label>
+            <br>
+            <input type="checkbox" id="on" name="toping" value="on">
+            <label for="on">양파</label>
+            <br>
+            <input type="checkbox" id="mu" name="toping" value="mu">
+            <label for="mu">버섯</label>
+        </fieldset>
+
+        <br>
+
+        <label>희망 배송 시간 : </label>
+        <input type="time" name="delivery" required>
+
+        <br><br>
+
+        <input type="submit" value="주문하기">
+
+    </form>
+
+
+
+</body>
+</html>

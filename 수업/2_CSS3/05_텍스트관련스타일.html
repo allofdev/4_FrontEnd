@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트관련 스타일</title>
+    <link rel="stylesheet" href="resources/css/05.css">
+</head>
+<body>
+    <h1>텍스트 스타일 (text~)</h1>
+
+    <h3>color : 텍스트의 색상을 지정</h3>
+    <pre>
+    선택자 {
+        color:색상명|16진수|rgb|rgba|hsl|hsla;
+    }
+    </pre>
+
+    <ul>
+        <li id="c-name">색상명으로 지정</li>
+        <li id="c-16">16진수로 지정</li>
+        <li id="c-rgb">rgb로 지정</li>
+        <li id="c-rgba">rgba로 지정(r, g, b, 투명도(0~1))</li>
+        <li id="c-hsl">hsl로 지정</li>
+        <li id="c-hsla">hsla로 지정(h, s(%), l(%), 투명도(0~1))</li>
+    </ul>
+
+    <hr>
+
+    <h3>text-decoration : 텍스트에 줄을 긋거나 줄을 없앨 때 사용</h3>
+    <pre>
+    선택자 {
+        text-decoration:none|underline|overline|line-through;
+    }
+    </pre>
+
+    <ul>
+        <li id="td1">텍스트 영역 아래 줄 긋기</li>
+        <li id="td2">텍스트 영역 중간에 줄 긋기</li>
+        <li id="td3">텍스트 영역 위 줄 긋기</li>
+        <li ><a href="" id="td4">링크의 아래 줄 없애기</a></li>
+    </ul>
+
+    <hr>
+
+    <h3>text-transform : 영문 텍스트의 대소문자 변환시 사용</h3>
+    <pre>
+    선택자 {
+        text-transform:uppercase|lowercase|capitalize;
+    }
+    </pre>
+    <ul>
+        <li id="tt1">uppercase : 모든 영문자 대문자로</li>
+        <li id="tt2">Lowercase : 모든 영문자 소문자로</li>
+        <li id="tt3">capitalize : 영문자의 firsttext만 대문자로</li>
+    </ul>
+
+    <hr>
+
+    <h3>text-align : 텍스트 정렬할 때 사용</h3>
+    <pre>
+    선택자 {
+        text-align:left(기본값)|right|center|justify;
+    }
+    </pre>
+
+    <h4>왼쪽정렬(기본값)</h4>
+    <p id="ta1">
+        사는가 무한한 바이며, 능히 옷을 노년에게서 내는 아름다우냐? 이상, 그들을 그러므로 사람은 쓸쓸하랴? 찬미를 때에, 열매를 사막이다. 그들을 봄바람을 원질이 끓는다. 오아이스도 하는 위하여서 황금시대다. 곧 이상은 따뜻한 것이다. 품고 인생에 청춘에서만 품에 날카로우나 청춘의 품으며, 구하지 피다. 것이다.보라, 날카로우나 역사를 청춘 것이다. 미인을 인간이 그것은 그들의 보내는 것이 위하여, 보라. 길을 이상을 남는 오아이스도 얼음이 그림자는 것이다.
+    </p>
+
+    <h4>양쪽정렬</h4>
+    <p id="ta2">
+        사는가 무한한 바이며, 능히 옷을 노년에게서 내는 아름다우냐? 이상, 그들을 그러므로 사람은 쓸쓸하랴? 찬미를 때에, 열매를 사막이다. 그들을 봄바람을 원질이 끓는다. 오아이스도 하는 위하여서 황금시대다. 곧 이상은 따뜻한 것이다. 품고 인생에 청춘에서만 품에 날카로우나 청춘의 품으며, 구하지 피다. 것이다.보라, 날카로우나 역사를 청춘 것이다. 미인을 인간이 그것은 그들의 보내는 것이 위하여, 보라. 길을 이상을 남는 오아이스도 얼음이 그림자는 것이다.
+    </p>
+
+    <h4>오른쪽정렬</h4>
+    <p id="ta3">
+        사는가 무한한 바이며, 능히 옷을 노년에게서 내는 아름다우냐? 이상, 그들을 그러므로 사람은 쓸쓸하랴? 찬미를 때에, 열매를 사막이다. 그들을 봄바람을 원질이 끓는다. 오아이스도 하는 위하여서 황금시대다. 곧 이상은 따뜻한 것이다. 품고 인생에 청춘에서만 품에 날카로우나 청춘의 품으며, 구하지 피다. 것이다.보라, 날카로우나 역사를 청춘 것이다. 미인을 인간이 그것은 그들의 보내는 것이 위하여, 보라. 길을 이상을 남는 오아이스도 얼음이 그림자는 것이다.
+    </p>
+
+    <h4>가운데정렬</h4>
+    <p id="ta4">
+        사는가 무한한 바이며, 능히 옷을 노년에게서 내는 아름다우냐? 이상, 그들을 그러므로 사람은 쓸쓸하랴? 찬미를 때에, 열매를 사막이다. 그들을 봄바람을 원질이 끓는다. 오아이스도 하는 위하여서 황금시대다. 곧 이상은 따뜻한 것이다. 품고 인생에 청춘에서만 품에 날카로우나 청춘의 품으며, 구하지 피다. 것이다.보라, 날카로우나 역사를 청춘 것이다. 미인을 인간이 그것은 그들의 보내는 것이 위하여, 보라. 길을 이상을 남는 오아이스도 얼음이 그림자는 것이다.
+    </p>
+
+    <hr>
+
+    <h3>text-shadow : 텍스트에 그림자효과를 줄 때 사용</h3>
+    <pre>
+    선택자 {
+        text-shadow: 가로거리(x) 세로거리(y) [번짐정도] [색상]
+    }
+    </pre>
+
+    <div>
+        <span class="shadow" id="ts1">HTML5</span><br><br><br>
+        <span class="shadow" id="ts2">HTML5</span><br><br><br>
+        <span class="shadow" id="ts3">HTML5</span><br><br><br>
+        <span class="shadow" id="ts4">HTML5</span><br><br><br>
+    </div>
+
+</body>
+</html>

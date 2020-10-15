@@ -1,0 +1,100 @@
+.outer{
+    border:1px solid red;
+    position:relative;
+}
+.positioning{
+    border:1px solid black;
+}
+#first{
+    background-color:yellow;
+    width:300px;
+    height:300px;
+}
+#second{
+    background-color:yellowgreen;
+    width:200px;
+    height:200px;
+
+    /* 
+    position:relative로 기준을 잡은 부모요소로부터 직접 위치 지정할거임
+     */
+    position:absolute;
+    top:50px;
+    left:50px;
+}
+#third{
+    background-color:red;
+    width:100px;
+    height:100px;
+    position:absolute;
+    top:100px;
+    left:100px;
+}
+#fixed{
+    border:1px solid black;
+    width:50px;
+    height:50px;
+    background-color:red;
+    position:fixed;
+}
+#fixed:hover{
+    background-color:tomato;
+    cursor:pointer;
+}
+
+.wrap{
+    position:relative;
+}
+.z-test{
+    border:1px solid black;
+    width:150px;
+    height:100px;
+}
+#z-test1{
+    background:yellow;
+    position:absolute;
+    top:100px;
+    left:100px;
+    z-index:100; /* 숫자가 클수록 위에 보여짐 */
+}
+#z-test2{
+    background-color:green;
+    position:absolute;
+    top:50px;
+    left:50px;
+    z-index:120;
+}
+#z-test3{
+    background-color:red;
+    position:absolute;
+    top:150px;
+    left:150px;
+    z-index:200;
+}
+.vis-test{
+    border:1px solid black;
+    width:100px;
+    height:100px;
+}
+#vis-test1{
+    background-color:red;
+}
+#vis-test2{
+    background-color:yellow;
+    /* visibility:hidden; => 보여지지는 않지만 영역은 차지하고 있는 상태 */
+    /* visibility:hidden; */
+
+    /* display:none; => 보여지지도 않고 영역도 차지 안하게끔 */
+    display:none;
+}
+#vis-test3{
+    background-color:green;
+}
+
+.float{
+    border:1px solid black;
+    width:100px;
+    height:100px;
+    /* display:inline-block; */
+    float:right;
+}

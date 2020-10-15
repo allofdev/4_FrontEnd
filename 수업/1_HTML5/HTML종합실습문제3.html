@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML 종합 실습 문제</title>
+    </head>    
+    
+
+
+    <body>
+        <h1>회원가입</h1>
+
+        <form action="test.do">
+
+            <fieldset>
+                <fieldset>
+                    <legend>필수 입력 사항</legend>
+                    <table>
+                        <tr>
+                            <th>ID</th>
+                            <td><input type="text" name="userId" placeholder="아이디 10글자 이내" max="10" required></td>
+                            <td><button type="button">중복 확인</button></td>
+                        </tr>
+                        <tr>
+                            <th>비밀번호</th>
+                            <td><input type="password" name="userPwd" placeholder="영문,숫자,특수문자 포함 8자 이상" min="8" required></td>
+                        </tr>
+                        <tr>
+                            <th>비밀번호 확인</th>
+                            <td><input type="password" name="userPwd2" min="8" requried ></td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td><input type="text" name="email" required></td>
+                            <td>
+                                <select name="email">
+                                    <option value="" selected>직접입력</option>
+                                    <option value="@naver.com">naver.com</option>
+                                    <option value="@gmail.com">gmail.com</option>
+                                    <option value="@daum.net">daum.net</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </fieldset>
+
+            <fieldset>
+                <legend>추가 정보</legend>
+                프로필 사진 :
+                <input type="file" name="profile">
+                <br><br>
+
+                성별 :
+                <input type="radio" name="gender" value="m" checked> 남자
+                <input type="radio" name="gender" value="f"> 여자
+                <br><br>
+
+                생년월일 :
+                <input type="date" name="birth">
+                <br><br>
+                
+                취미
+                <input type="checkbox" name="hobby" value="baseball">야구
+                <input type="checkbox" name="hobby" value="basketball">농구
+                <input type="checkbox" name="hobby" value="soccer">축구
+                <br>
+                <input type="checkbox" name="hobby" value="study"checked>공부
+                <input type="checkbox" name="hobby" value="music">음악감상
+                <br>
+                <input type="checkbox" name="hobby" value="">기타:
+                <input type="text" name="hobby" disabled>
+                <br><br>
+
+                자기소개
+                <textarea name="introduce" rows="4" cols="30" style="resize:none" ></textarea>
+                
+
+
+
+
+
+            </fieldset>
+
+
+
+
+
+
+
+            </fieldset>
+            <br>
+            <input type="submit" value="회원가입">
+            <input type="reset" value="다시입력">
+            <button type="button">이전으로</button>
+        </form>
+
+
+    </body>
+</html>
